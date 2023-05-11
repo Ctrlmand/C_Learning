@@ -15,11 +15,12 @@ int main ()
         for ( k=2; k<i; k++) {
             if ( i % k == 0) {
                 isprime = 0;
+                printf ("%d Not Prime\n",i);
                 break;
             }
         }
         if ( isprime) {
-            printf ("Prime:%d\n", i);
+            printf ("%d Is Prime\n", i);
             sum += i;
             cnt++;
         }
