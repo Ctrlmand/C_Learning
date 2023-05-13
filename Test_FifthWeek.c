@@ -12,7 +12,6 @@ int main ()
 
     } else {
         for ( int i=x; i>1; i--) {
-            
             if ( isPrime(i) && x%i == 0) {
                 while ( x%i ==0) {
                     printf ("%d",i);
