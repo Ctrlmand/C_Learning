@@ -2,15 +2,15 @@
 int isPrime( int x, int knowPrime[], int numberOfPrime);
 int main(void) 
 {
-    const int number = 23;
-    int Prime[23] = {2};
+    const int number = 14;
+    int Prime[14] = {2};
     int cnt = 1;
     int i = 3;
     int x;
     {
         printf ("\t\t");
         for (x=0; x<number; x++) {
-            printf("%d\t",Prime[x]);
+            printf("%d\t",x);
         }
         printf ("\n");
     }
@@ -19,7 +19,7 @@ int main(void)
             Prime[cnt++] = i;
         }
         {
-            printf("i=%d\tcnt=%d", i, cnt);
+            printf("i=%d\tcnt=%d\t", i, cnt);
             for (x=0; x<number; x++){
                 printf ("%d\t", Prime[x]);
             }
@@ -29,7 +29,7 @@ int main(void)
     }
     for (i=0; i<number; i++) {
         printf ("%d", Prime[i]);
-        if ((i+1)%5 ==0)    printf("\t");
+        if ((i+1)%5)    printf("\t");
         else    printf ("\n");
     }
     return 0;
