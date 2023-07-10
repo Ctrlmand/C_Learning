@@ -1,5 +1,4 @@
 #include <stdio.h>
-int serch( int key, int a[], int length);
 int main (void) 
 {
     //const int number = 20;
